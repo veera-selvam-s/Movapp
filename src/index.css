@@ -1,9 +1,10 @@
 body {
-  background-color: rgb(70, 13, 124);
+  background-color: #1a7a4c;
   color: white;
   
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  font-weight: 500;
 }
 .root{
   display: flex;
@@ -14,7 +15,7 @@ body {
   flex-wrap: wrap;
 }
 .movie{
-  background-color: rgba(18, 11, 78, 0.664);
+  background-color: #101820;
   width: 300px;
   border-radius: 3px;
   position:relative;
@@ -44,7 +45,7 @@ body {
   position:absolute;
   background-color: white;
   padding: 1rem;
-  color: rgba(18, 11, 78, 0.664);
+  color: #101820;
   bottom: 0;
   left: 0;
   right: 0;
@@ -60,7 +61,7 @@ body {
   transform: translateY(0%);
 }
 .header{
-  background-color:rgba(18, 11, 78, 0.664);
+  background-color:#101820;
   padding:1rem;
   display:flex;
   justify-content: space-between;
@@ -68,7 +69,7 @@ body {
 }
 .search{
   background-color: transparent;
-  border:2px solid rgba(177, 169, 248, 0.664);
+  border:2px solid #50b886;
   border-radius: 50px;
   color:white ;
   padding :0.5rem 1.5rem;
