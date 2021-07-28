@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Movapp/static/css/main.dbd8368d.chunk.css",
+    "main.js": "/Movapp/static/js/main.e5f073b3.chunk.js",
+    "main.js.map": "/Movapp/static/js/main.e5f073b3.chunk.js.map",
+    "runtime-main.js": "/Movapp/static/js/runtime-main.a9b6206a.js",
+    "runtime-main.js.map": "/Movapp/static/js/runtime-main.a9b6206a.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/Movapp/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.8ffd6231.chunk.js": "/Movapp/static/js/2.8ffd6231.chunk.js",
+    "static/js/2.8ffd6231.chunk.js.map": "/Movapp/static/js/2.8ffd6231.chunk.js.map",
+    "static/js/3.0712e0a4.chunk.js": "/Movapp/static/js/3.0712e0a4.chunk.js",
+    "static/js/3.0712e0a4.chunk.js.map": "/Movapp/static/js/3.0712e0a4.chunk.js.map",
+    "index.html": "/Movapp/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/Movapp/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.dbd8368d.chunk.css.map": "/Movapp/static/css/main.dbd8368d.chunk.css.map",
+    "static/js/2.8ffd6231.chunk.js.LICENSE.txt": "/Movapp/static/js/2.8ffd6231.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9b6206a.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.8ffd6231.chunk.js",
+    "static/css/main.dbd8368d.chunk.css",
+    "static/js/main.e5f073b3.chunk.js"
+  ]
+}
