@@ -1,13 +1,93 @@
 body {
+  background-color: rgb(70, 13, 124);
+  color: white;
+  
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+.root{
+  display: flex;
+  flex-direction: column;
+}
+.movie-container{
+  display:flex;
+  flex-wrap: wrap;
+}
+.movie{
+  background-color: rgba(18, 11, 78, 0.664);
+  width: 300px;
+  border-radius: 3px;
+  position:relative;
+  overflow :hidden;
+  box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
+  margin:1rem;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.movie img{
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 
+     0 rgba(0, 0, 0, 0.3),
+    10px 10px 10px rgb(0, 0, 0);
+}
+.movie-info{
+  display:flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.movie-info{
+  margin:0;
+}
+.movie-over{
+  position:absolute;
+  background-color: white;
+  padding: 1rem;
+  color: rgba(18, 11, 78, 0.664);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition:transform 0.3s ease-in-out;
+  overflow:auto;
+  max-height: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px -3px 5px rgb(0,0,0,0.1);
+}
+.movie:hover .movie-over{
+  transform: translateY(0%);
+}
+.header{
+  background-color:rgba(18, 11, 78, 0.664);
+  padding:1rem;
+  display:flex;
+  justify-content: space-between;
+  
+}
+.search{
+  background-color: transparent;
+  border:2px solid rgba(177, 169, 248, 0.664);
+  border-radius: 50px;
+  color:white ;
+  padding :0.5rem 1.5rem;
+}
+.search:focus{
+  outline: 0;
+}
+.br{
+  color:red;
+}
+#vote_span{
+  background-color: rgb(224, 211, 19);
+  color: black;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 
+    -3px -3px 3px 0 rgba(0, 0, 0, 0.3),
+    3px 3px 3px rgba(255, 255, 255, 0.25);
+}
+.header > h1{
+  font-family: 'Playfair Display', serif;
 }
