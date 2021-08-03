@@ -95,12 +95,49 @@ body {
   font-family: 'Playfair Display', serif;
   color:#50b886;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
   .header{
     flex-direction: column;
     justify-content: center;
   }
   .search{
     max-width: 100%;
+  }
+  .movie{
+    max-width: 125px;
+  }
+  .movie-container{
+    margin:0 0;
+    padding: 0 0;
+  }
+  .movie-info{
+    height: 75px;
+  }
+  .movie-info  h3{
+    font-size: 13px;
+  }
+  .movie-over h2{
+    font-size: 15px;
+  }
+  .movie-over p{
+    font-size: 10px;
+  }
+  .movie-info  span{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:300px){
+  .movie{
+    max-width: 100px;
+  }
+  .movie-info{
+    height: 50px;
+  }
+  .movie-info  h3{
+    font-size: 9px;
+  }
+  .movie-info  span{
+    font-size: 9px;
   }
 }

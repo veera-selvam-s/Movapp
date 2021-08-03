@@ -11,12 +11,13 @@ class Movie extends Component{
         var overview = this.props.overview;
         var vote_average=this.props.vote_average;
 
+
         return(
             <div className="movie">
                 <img src={IMG_API+poster_path} alt={title}/>
                 <div className="movie-info">
-                    <h4>{title}</h4>
-                    <span id="vote_span">{vote_average}</span>
+                    <h3>{title}</h3>
+                    <span>{vote_average}</span>
                 </div>
                 <div className="movie-over">
                     <h2>Overview:</h2>
