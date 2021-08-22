@@ -2,7 +2,8 @@ import React ,{useEffect, useState} from "react";
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 import api from './api/fetch';
 import HeaderComponent from "./components/headerComponent";
-import RenderMovie from './components/renderMovie'
+import RenderMovie from './components/renderMovie';
+import MovieDetail from "./components/movieDetail";
 
 import './App.css';
 
@@ -42,15 +43,18 @@ setSearchTerm('');
   return (
         //<HeaderComponent onChangeHandler={onChangeHandler} handleOnSubmit={handleOnSubmit}  />
     <Router>
+      {/* headerComponent */}
       <Route render={(props)=>
         (<HeaderComponent {...props} movies={movies} 
         searchTerm={searchTerm} onChangeHandler={onChangeHandler} 
         handleOnSubmit={handleOnSubmit} />)}>
         </Route>
         <Switch>
+          {/* default List */}
           <Route path="/Movapp" exact render={(props)=>(<RenderMovie {...props} movies={movies} />)}>
-
           </Route>
+          {/* movie detail */}
+          <Route path={`/detail/:id`} component={MovieDetail} ></Route>
         </Switch>
     </Router>
 

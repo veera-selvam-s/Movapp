@@ -2,7 +2,6 @@ import React from 'react';
 import Movie from './movie';
 
 const RenderMovie =(props)=>{
-    console.log(props);
     return(
         <div className="movie-container">
           

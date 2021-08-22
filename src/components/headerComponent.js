@@ -4,11 +4,6 @@ import React from 'react';
 
 
 const HeaderComponent =(props)=>{
-    console.log(props);
-        
-
-        
-        
         return(
             <div className="header">
                 <h1 id="tit">MOVAPP</h1>
