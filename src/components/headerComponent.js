@@ -1,29 +1,27 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 
 
 
-class Header extends Component{
-    render(){
+const HeaderComponent =(props)=>{
+    console.log(props);
         
-        var searchTerm=" ";
 
         
         
         return(
             <div className="header">
-                        <form onSubmit={handleOnSubmit}>
-                        <h3 id="tit">MOVAPP</h3>
-                            <input 
-                            className="search" type="text" 
-                            placeholder="search movies..."
-                            value={searchTerm}
-                            Onchange={onChangeHandler}
-                            />
-                        </form>
-                
+                <h1 id="tit">MOVAPP</h1>
+                <form onSubmit={props.handleOnSubmit}>
+                    <input 
+                    className="search" type="search" 
+                    placeholder="search movies..."
+                    value={props.searchTerm}
+                    onChange={props.onChangeHandler}
+                    />
+                </form>         
             </div>
         );
-    }
 }
-export default Header;
+
+export default HeaderComponent;

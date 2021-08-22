@@ -1,6 +1,8 @@
 import React ,{useEffect, useState} from "react";
-import Movie from './components/movie';
+import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 import api from './api/fetch';
+import HeaderComponent from "./components/headerComponent";
+import RenderMovie from './components/renderMovie'
 
 import './App.css';
 
@@ -38,30 +40,48 @@ setSearchTerm('');
 
 
   return (
-    <>
-        <div className="header">
-          <h1 id="tit">MOVAPP</h1>
-        <form onSubmit={handleOnSubmit}>
-                                <input 
-                                className="search" type="search" 
-                                placeholder="search movies..."
-                                value={searchTerm}
-                                onChange={onChangeHandler}
-                                />
-        </form>         
+        //<HeaderComponent onChangeHandler={onChangeHandler} handleOnSubmit={handleOnSubmit}  />
+    <Router>
+      <Route render={(props)=>
+        (<HeaderComponent {...props} movies={movies} 
+        searchTerm={searchTerm} onChangeHandler={onChangeHandler} 
+        handleOnSubmit={handleOnSubmit} />)}>
+        </Route>
+        <Switch>
+          <Route path="/Movapp" exact render={(props)=>(<RenderMovie {...props} movies={movies} />)}>
+
+          </Route>
+        </Switch>
+    </Router>
+
+
+
+
+
+    // <>
+    //     <div className="header">
+    //       <h1 id="tit">MOVAPP</h1>
+    //     <form onSubmit={handleOnSubmit}>
+    //                             <input 
+    //                             className="search" type="search" 
+    //                             placeholder="search movies..."
+    //                             value={searchTerm}
+    //                             onChange={onChangeHandler}
+    //                             />
+    //     </form>         
                           
                             
                             
                       
-        </div>
-        <div className="movie-container">
+    //     </div>
+    //     <div className="movie-container">
           
-          {movies.length >0 && movies.map((movie)=>
-            <Movie key={movie.id} {...movie} />
-          )}
+    //       {movies.length >0 && movies.map((movie)=>
+    //         <Movie key={movie.id} {...movie} />
+    //       )}
           
-        </div>
-    </>
+    //     </div>
+    // </>
   );
 }
 
